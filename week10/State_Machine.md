@@ -1,4 +1,4 @@
-# State machine
+# State Machine
 
 
 State machine(상태 머신)이란, 순차 회로를 정의하는 디지털 시스템이다.  
