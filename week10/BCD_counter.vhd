@@ -12,9 +12,11 @@ entity BCD_counter is
 end BCD_counter;
 
 architecture state_machine of BCD_counter is
+	-- zero~nine 을 state_type으로 선언 후 signal로 정의
 	type state_type is (zero, one, two, three, four, five, six, seven, eight, nine);
 	signal state : state_type;
 begin
+	-- 상태 천이 조건
 	state_move : process(nRst, clk)
 	begin
 		if(nRst = '0') then
